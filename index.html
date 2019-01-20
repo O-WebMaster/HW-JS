@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeWork Js</title>
+</head>
+<body>
+    <!--Взаимодействие с пользователем: alert, prompt, confirm-->
+
+    <script>
+        /*alert ("Задача №1")
+        var name = prompt ("What is your name?", "");
+        alert (name);
+
+
+
+
+
+        alert ("Задача №2     Условные операторы: if, '?'");
+        
+        var value = prompt ("Каково «официальное» название JavaScript?", "");
+        if (value == "ECMAScript") {
+            alert ("Верно!");
+        }
+        else {
+            alert ("Не знаете? «ECMAScript»!");
+        }*/
+
+        //alert ("Задача №3     Условные операторы: if, '?'");
+
+        /*var userName = prompt ("Кто пришел", "");
+        if (userName != "Admin") {
+            alert ("Я вас не знаю");
+        }
+        else if (userName == null) {
+            alert ("Вход отменен");
+        }
+        else {
+            var password = prompt ("Пароль", "");
+            if (password != "Чёрный Властелин") {
+                alert ("Другое");
+            }
+            else if (password == null) {
+                alert ("Вход отменен");
+            }
+            else {
+                alert ("Добро пожаловать!");
+            }
+        }*/
+
+
+        // var Name = prompt('Кто пришел?', 'khjkg');
+
+        // if (Name == "Admin") {
+        //     var password = prompt('Пароль?', '');
+        //     if (password == 'Чёрный Властелин') {
+        //         alert ('Добро пожаловать!');
+        //     } else if (password == null) {
+        //         alert ('Вход отменен');
+        //     } else alert ('Пароль не верен');
+        // } else if (Name == null) {
+        //     alert('Вход отменен');
+        // } else {
+        //     alert('Я вас не знаю');
+        // }
+        
+
+
+        //alert ("Задача №4     Условные операторы: if, '?'");
+        // Перепишите if с использованием оператора '?'
+        // if (a + b < 4) {
+        // result = 'Мало';
+        // } else {
+        // result = 'Много';
+        // }
+
+        //result = (a + b < 4) ? 'Мало': 'Много'; // <=== Решение
+
+
+
+
+
+
+
+
+
+        // alert ("Задача №5     Условные операторы: if, '?'");
+        // // Перепишите if..else с использованием нескольких операторов '?'
+        // // var message;
+
+        // // if (login == 'Вася') {
+        // // message = 'Привет';
+        // // } else if (login == 'Директор') {
+        // // message = 'Здравствуйте';
+        // // } else if (login == '') {
+        // // message = 'Нет логина';
+        // // } else {
+        // // message = '';
+        // // }
+
+
+        // //Моё решение
+        // //var login = prompt ('введите логин', ''); // это для проверки кода ниже 
+        // var massage;
+        // massage = (login == 'Вася') ? 'Привет': 
+        // (login == 'Директор') ? 'Здравствуйте': 
+        // (login == '') ? 'Нет логина':
+        // '';
+        // //alert (massage) // Код работает УРА!!!!
+
+
+
+        // //Решение на сайте 
+        // // var massage = (login == 'Вася') ? 'Привет':  // можно чуть сократить сразу присвоев переменной значение 
+        // // (login == 'Директор') ? 'Здравствуйте': 
+        // // (login == '') ? 'Нет логина'
+
+    </script>
+
+
+
+    <!-- Логические операторы || (ИЛИ), && (И) и ! (НЕ)
+    <script>
+        // //Задача: Проверка if внутри диапазона. 
+        // //Напишите условие if для проверки того факта, что переменная age находится между 14 и 90 включительно.
+        // //Решение Моё:
+        // if (age >= 14 && age <= 90);
+
+        // Задача: Проверка if вне диапазона
+        // Напишите условие if для проверки того факта, что age НЕ находится между 14 и 90 включительно.
+        // Сделайте два варианта условия: первый с использованием оператора НЕ !, второй – без этого оператора.
+        // Решение моё:
+        if (!(age >= 14 && age <= 90));         //if (age !>= 14 && age !<= 90) - не верно, см. синтаксис
+        if (age < 14 || age > 90);              //if (age < 14 && age > 90) - не верно, нужно использовать "И"
+    </script> -->
+
+
+
+
+    <!-- <script>
+            'use strict';
+            for (var i = 2; i <= 10; i++) {
+              if (i % 2 == 1) continue 
+                alert( i );
+              
+            }
+    </script> -->
+
+
+
+
+
+    
+    <!-- <script>
+        'use strict';
+        // Замените for на while
+        // важность: 5
+        // Перепишите код, заменив цикл for на while, без изменения поведения цикла.
+        var i = 0;
+        while (i<3) {
+            alert ( "номер " + i + "!" );
+            i++;
+        }
+    </script> -->
+
+<!-- <script>
+    var i = +prompt ('Введите число', '0')
+    while ('okey') {
+        if (i <= 100) {
+            i = +prompt ('Введите число', '0');
+            "okey"
+        }
+    }
+</script> -->
+
+    <!-- <script>
+        var num ;
+        while (num <= 100 && num != null) {
+            num = prompt("Введите число больше 100?", 0);
+        }
+    </script> -->
+
+
+    <!-- <script>
+        'use strict';
+        var num;
+        
+        do {
+          num = prompt("Введите число больше 100?", 0);
+        } while (num <= 100 && num != null);
+    </script> -->
+
+
+
+    <!-- <script>
+        'use strict';
+        /**
+         * Возводит x в степень n (комментарий JSDoc)
+         *
+         * @param {number} x число, которое возводится в степень
+         * @param {number} n степень, должна быть целым числом больше 1
+         *
+         * @return {number} x в степени n
+         */
+        function pow(x, n) {
+          var z = x;
+        
+          for (var i = 1; i < n; i++) {
+            z = z*x;
+          }
+        
+          return z;
+        }
+        
+        var x = prompt("x?", '');
+        var n = prompt("n?", '');
+        
+        if (n <= 1) {
+          alert('Степень ' + n +
+            'не поддерживается, введите целую степень, большую 1'
+          );
+        } else {
+          alert( pow(x, n) );
+        }
+      </script> -->
+
+
+      <!-- <script>
+        'use strict';
+        sayHi("Вася"); // Привет, Вася
+        
+        function sayHi(name) {
+          alert( "Привет, " + name );
+        }
+      </script> -->
+
+
+
+
+
+      <!-- Задача № 1 -->
+      <script>
+          var namber = '#';
+          while (namber.length <= 7) {
+              console.log (namber);
+              namber = namber + '#';
+          }
+      </script>
+
+      <!-- Задача № 2 -->
+      <script>
+          for (b=1; b < 101; b=b+1) {
+              if (b % 3 == 0 & b % 5 == 0) {
+                  console.log ('FizzBazz');
+              }
+              else if (b % 3 == 0) {
+                 console.log ('Fizz'); 
+              }
+              else if (b%5==0) {
+                  console.log ('Bazz');
+              }
+              else {console.log (b)}
+          }
+      </script>
+
+
+      <!-- Задача № 3 Шахматная доска -->
+      <script>
+          // вводим переменные
+          let DlinaPola = 8;
+          let VisotaPola = 8;
+          let h='#';
+          let p=' ';
+          stroka1 = ''
+          stroka2 = ''
+
+          // Создаём строку 1  
+          for (d=1; d<=DlinaPola; d=d+1) {
+              if (d%2!==0) {
+                  stroka1=stroka1+h
+              } else {
+                  stroka1=stroka1+p
+              }
+          }
+
+          // Создаём строку 2
+          for (c=1; c<=DlinaPola; c=c+1) {
+              if (c%2!==0) {
+                  stroka2=stroka2+p
+              } else {
+                  stroka2=stroka2+h
+              }
+          }
+
+          // Создаём поле
+          for (pole = 1; pole <= VisotaPola; pole = pole+1) {
+              if (pole%2!==0) {
+                  console.log (stroka1)
+              }
+              else {console.log(stroka2)}
+          }
+      </script>
+
+
+        <!-- Задача № 4 Находим Минимальное число из 2х -->
+        <script>
+            function min(a,b) {
+                if (a<b) {
+                   return a;
+                   }
+                    else {
+                        return b;
+                    }
+            }
+            console.log(min(0, 10))
+        </script>
+
+
+
+
+
+
+        <!-- Задача № 5 Рекурсия -->
+
+        <!-- Мы видели, что оператор % (остаток от деления) может использоваться для определения того, чётное ли число ( % 2). 
+        А вот ещё один способ определения:
+        Ноль чётный.
+        Единица нечётная.
+        У любого числа N чётность такая же, как у N - 2.
+        Напишите рекурсивную функцию isEven согласно этим правилам. Она должна принимать число и возвращать булевское значение.
+        Потестируйте её на 50 и 75. Попробуйте задать ей -1. Почему она ведёт себя таким образом? Можно ли её как-то исправить?
+        console.log(isEven(50));
+        // → true
+        console.log(isEven(75));
+        // → false
+        console.log(isEven(-1));
+        // → ?? -->
+
+        <script>
+            function isEven(N) {
+                N=Math.abs(N); // для устранения проблемы с отрицательными числами можно добавить "модуль числа", команду модуля "нагуглил"
+                if (N-2==0) { // можно поставить равенство N==0
+                    return 'true';
+                }
+                else if (N-2==1) { // можно поставить равенство N==1
+                    return 'false';
+                }
+                else {return isEven(N-2)}
+            }
+            console.log(isEven(75));
+        </script>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
