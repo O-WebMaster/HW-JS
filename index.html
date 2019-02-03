@@ -267,7 +267,7 @@
 
 
       <!-- Задача № 3 Шахматная доска -->
-      <script>
+      <!-- <script>
           // вводим переменные
           let DlinaPola = 8;
           let VisotaPola = 8;
@@ -301,11 +301,29 @@
               }
               else {console.log(stroka2)}
           }
+      </script> -->
+
+      <script>
+          //Создаем поле
+          let pole = '';
+          let razmerPole = 8;
+          for (let osY = 0; osY < razmerPole; osY++ ) {
+              for (let osX = 0; osX < razmerPole; osX++ ) {
+                  if ((osY + osX)%2 == 0) {
+                      pole = pole + '#';
+                  }
+                  else {
+                      pole = pole + ' ';
+                  }
+              }
+              pole = pole +'\n'
+          }
+          console.log(pole);
       </script>
 
 
         <!-- Задача № 4 Находим Минимальное число из 2х -->
-        <script>
+        <!-- <script>
             function min(a,b) {
                 if (a<b) {
                    return a;
@@ -315,7 +333,13 @@
                     }
             }
             console.log(min(0, 10))
-        </script>
+        </script> -->
+         <script>
+            function min(a,b) {
+                return a<b ? a : b;
+            }
+            console.log(min(0, 10))
+        </script>       
 
 
 
@@ -341,15 +365,19 @@
         <script>
             function isEven(N) {
                 N=Math.abs(N); // для устранения проблемы с отрицательными числами можно добавить "модуль числа", команду модуля "нагуглил"
-                if (N-2==0) { // можно поставить равенство N==0
+                if (N==0) { // можно поставить равенство N==0
                     return 'true';
                 }
-                else if (N-2==1) { // можно поставить равенство N==1
+                else if (N==1) { // можно поставить равенство N==1
                     return 'false';
                 }
                 else {return isEven(N-2)}
             }
+            console.log(isEven(50));
             console.log(isEven(75));
+            console.log(isEven(1));
+            console.log(isEven(-1));
+
         </script>
         
 
